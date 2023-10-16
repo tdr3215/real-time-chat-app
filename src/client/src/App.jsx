@@ -1,18 +1,15 @@
-import { Button, Card, CardBody, CardHeader, Text } from '@chakra-ui/react';
+// import { Button, Card, CardBody, CardHeader, Text } from '@chakra-ui/react';
 import './App.css';
-
+import { Route, Routes } from 'react-router-dom';
+import { ChatPage } from './pages/Chat/ChatPage';
+import { Homepage } from './pages/Home/Homepage';
 function App() {
   return (
     <>
-      <Card textAlign={'center'} w={'xl'}>
-        <CardHeader>Hello Girls</CardHeader>
-        <CardBody paddingBlockStart={'-2.5'}>
-          <Text>View a summary of all your customers over the last month.</Text>
-          <Button marginTop={'6'} colorScheme="pink">
-            Click me!
-          </Button>
-        </CardBody>
-      </Card>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/chats" element={<ChatPage />} />
+      </Routes>
     </>
   );
 }

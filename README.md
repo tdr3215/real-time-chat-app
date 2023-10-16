@@ -1,20 +1,19 @@
-# Snug Chat ☕️
+# Real-time Chat App: Pixel Pals 👾
 
 ## Description
+
 This application was originally created as a chat interface for [Cozy Connection](https://github.com/tdr3215/cozy-connection-rest-api). This chat application can be used in a mutitude of different services, regardless of platform. Use this real-time chat application to:
 
 - Connect with friends and family 🏠
 - Interact with customers 🛍️
 - Communicate with co-workers 💻
 
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
-- [License](#license)
+- [Badges](#badges)
 
 ## Installation
 
@@ -42,20 +41,19 @@ If you followed tutorials, include links to those here as well.
 
 The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
 
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
 ## Badges
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
 
 ## Features
 
-If your project has a lot of features, list them here.
+- Real-time messages
+- Group chats
+- Direct Messages
 
 ## How to Contribute
 
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+See [Code of Conduct](CODE_OF_CONDUCT.md) for details on how to contribute.

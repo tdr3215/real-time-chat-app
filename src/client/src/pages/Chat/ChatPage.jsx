@@ -5,6 +5,7 @@ export const ChatPage = () => {
   const [chats, setChats] = useState([]);
   useEffect(() => {
     const fetchChats = async () => {
+      // GET: /api/chat
       const { data } = await axios.get('/api/chat');
       setChats(data);
     };

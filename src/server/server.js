@@ -13,7 +13,7 @@ app.get('/api/chat', (req, res) => {
   res.send(chats);
 });
 
-// GET /api/:id
+// GET: /api/:id
 app.get('/api/chat/:id', (req, res) => {
   const oneChat = chats.find(({ _id }) => _id === req.params.id);
   res.send(oneChat);

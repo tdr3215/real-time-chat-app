@@ -9,6 +9,8 @@ import {
   TabPanel,
 } from '@chakra-ui/react';
 // import { BG } from './BG';
+import { Login } from '../components/Authentication/Login';
+import { SignUp } from '../components/Authentication/SignUp';
 export const Homepage = () => {
   return (
     <Container maxW="xl" centerContent color={'#FCFBF4'}>
@@ -16,7 +18,7 @@ export const Homepage = () => {
         display={'flex'}
         justifyContent={'center'}
         p={3}
-        bg={'rgba(1, 5, 30,0.87)'}
+        bg={'rgba(1, 5, 30,0.95)'}
         w={'100%'}
         m={'40px 0 15px 0'}
         borderRadius={'xl'}
@@ -27,21 +29,26 @@ export const Homepage = () => {
         </Text>
       </Box>
       <Box
-        bg={'rgba(1, 5, 30,0.87)'}
+        bg={'rgba(1, 5, 30,0.95)'}
         w={'100%'}
         p={4}
         borderRadius={'lg'}
         borderWidth={'1px'}
         color={'white'}
       >
-        <Tabs variant="soft-rounded" colorScheme="blue">
+        <Tabs variant="soft-rounded">
           <TabList mb={'1em'}>
             <Tab width={'50%'}>Login</Tab>
             <Tab width={'50%'}>Sign Up</Tab>
           </TabList>
           <TabPanels>
-            <TabPanel>{/* <Login/> */}</TabPanel>
-            <TabPanel>{/* <SignUp/> */}</TabPanel>
+            {' '}
+            <TabPanel>
+              <Login />
+            </TabPanel>
+            <TabPanel>
+              <SignUp />
+            </TabPanel>
           </TabPanels>
         </Tabs>
       </Box>

@@ -1,8 +1,10 @@
 import express from 'express';
 import { chats } from './data/data.js';
 import 'dotenv/config';
+import { connectdb } from './config/db.js';
 
 const app = express();
+connectdb();
 
 app.get('/api', (req, res) => {
   res.send('API is running!!');

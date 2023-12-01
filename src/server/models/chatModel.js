@@ -1,4 +1,4 @@
-import { Schema, Model } from 'mongoose';
+import mongoose from 'mongoose';
 /*
 ?  Properties 
 * chatName
@@ -37,4 +37,5 @@ const chatSchema = new Schema(
   { timestamps: true }
 );
 
-export const Chat = new Model('Chat', chatSchema);
+const Chat = mongoose.model('Chat', chatSchema);
+export { Chat };

@@ -10,3 +10,4 @@ export const connectdb = async () => {
     process.exit();
   }
 };
+

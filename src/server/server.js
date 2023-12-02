@@ -1,18 +1,20 @@
 import express from 'express';
 import 'dotenv/config';
 import { connectdb } from './config/db.js';
-import { userRoutes } from './routes/userRoutes.js';
-
+import { router } from './routes/index.js';
 const app = express();
-app.use(express.json());
 connectdb();
+// * JSONify the responses recieved
+app.use(express.json());
+app.use('/api', router);
 
 app.get('/api', (req, res) => {
-  res.send('API is running!!');
+  res.send('Api is running!');
 });
-
 // * Middleware
-app.use('/api/user', userRoutes);
+
+// Serving static assets
+app.use(express.static('public'));
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {

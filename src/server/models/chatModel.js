@@ -9,7 +9,7 @@ import mongoose from 'mongoose';
 
  */
 
-const chatSchema = new Schema(
+const chatSchema = mongoose.Schema(
   {
     chatName: {
       type: String,

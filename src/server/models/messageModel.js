@@ -1,4 +1,4 @@
-import { Schema, Model } from 'mongoose';
+import mongoose from 'mongoose';
 /*
 ?  Properties 
 * body
@@ -7,7 +7,7 @@ import { Schema, Model } from 'mongoose';
  
 
  */
-const messageSchema = new Schema(
+const messageSchema = mongoose.Schema(
   {
     body: { type: 'String', trim: true },
     sender: { type: Schema.Types.ObjectId, ref: 'User' },
@@ -16,4 +16,5 @@ const messageSchema = new Schema(
   { timestamps: true }
 );
 
-export const Message = new Model('Message', messageSchema);
+const Message = mongoose.model('Message', messageSchema);
+export { Message };

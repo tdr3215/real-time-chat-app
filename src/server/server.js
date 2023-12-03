@@ -1,9 +1,11 @@
 import express from 'express';
 import 'dotenv/config';
-import { connectdb } from './config/db.js';
+import { run } from './config/db.js';
 import { router } from './routes/index.js';
 const app = express();
-connectdb();
+// Start Database
+run().catch(console.dir);
+
 // * JSONify the responses recieved
 app.use(express.json());
 app.use('/api', router);

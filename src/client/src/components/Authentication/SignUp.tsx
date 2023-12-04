@@ -18,8 +18,8 @@ export const SignUp = () => {
   const [profilePic, setProfilePic] = useState('');
 
   const handleClick = () => setShow(!show);
-  const postDetails = (pic) => {};
-  const submitHandler = (e) => {};
+  const postDetails = (pic: string) => {};
+  const submitHandler = (e: any) => {};
   return (
     <VStack spacing={'5px'} color={'white'}>
       {/* FIRST NAME */}
@@ -81,7 +81,8 @@ export const SignUp = () => {
           type="file"
           p={1}
           accept="image/*"
-          onChange={(e) => postDetails(e.target.files[0])}
+          // !Changed this until we create functionality for uploading files
+          onChange={(e) => postDetails(e.currentTarget.value)}
         />
       </FormControl>
       <Button

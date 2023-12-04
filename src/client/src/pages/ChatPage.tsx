@@ -15,9 +15,9 @@ export const ChatPage = () => {
   return (
     <>
       <ul>
-        {chats.map((chat, i) => {
+        {/* {chats.map((chat, i) => {
           return <li key={i}>{chat.chatName}</li>;
-        })}
+        })} */}
       </ul>
     </>
   );

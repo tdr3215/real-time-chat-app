@@ -14,8 +14,7 @@ export const Login = () => {
   const [password, setPassword] = useState('');
 
   const handleClick = () => setShow(!show);
-  const postDetails = (pic) => {};
-  const submitHandler = (e) => {};
+  const submitHandler = (e: any) => {};
   return (
     <VStack spacing={'5px'} color={'white'}>
       {/* EMAIL */}

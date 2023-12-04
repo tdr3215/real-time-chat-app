@@ -7,7 +7,7 @@
   "scripts": {
     "test": "test",
     "client": "concurrently \"cd src/client && npm run dev\"",
-    "server": "nodemon src/server/server.js",
+    "server": "nodemon src/server/server.ts",
     "dev": "concurrently \"npm run client\" \"npm run server\""
   },
   "author": "",
@@ -17,7 +17,8 @@
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^7.6.3"
+    "mongoose": "^7.6.3",
+    "ts-node": "^10.9.1"
   },
   "devDependencies": {
     "concurrently": "^8.2.1",
